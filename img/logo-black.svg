@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 666.66669 666.66669" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clipPath18" clipPathUnits="userSpaceOnUse">
+      <path id="path16" d="M 0,500 H 500 V 0 H 0 Z"/>
+    </clipPath>
+  </defs>
+  <rect x="-2.328" y="-2.328" width="671.323" height="671.323" style=""/>
+  <g transform="matrix(1.333333, 0, 0, -1.333333, -8.890878, 695.039551)" id="g10">
+    <g id="g12" transform="matrix(1, 0, 0, 1, 2.910362, 0)">
+      <g clip-path="url(#clipPath18)" id="g14" transform="matrix(1, 0, 0, 1, 0.582072, -0.582072)">
+        <g transform="translate(253.1758,441.7583)" id="g20">
+          <path id="path22" style="fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 0px; fill: rgb(255, 255, 255);" d="m 0,0 c -105.905,0 -191.758,-85.853 -191.758,-191.758 0,-59.609 27.199,-112.865 69.862,-148.035 v 148.035 c 0,67.321 54.575,121.895 121.896,121.895 67.321,0 121.896,-54.574 121.896,-121.895 v -148.035 c 42.664,35.17 69.862,88.426 69.862,148.035 C 191.758,-85.853 105.905,0 0,0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
