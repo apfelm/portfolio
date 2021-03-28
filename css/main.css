@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior: smooth;
   font-family: 'Montserrat';
 }
 
@@ -270,6 +271,9 @@ textarea {
 .c-w{
   color: #fff;
 }
+.text-right {
+  text-align: right;
+}
 
 /* SPECIFIC STYLES */
 
@@ -314,13 +318,28 @@ textarea {
 .nav-link a {
   letter-spacing: 1px;
   text-decoration: none;
-  color: #fff;
+  color: #222;
   padding: 10px 15px;
   transition: all 400ms ease-in-out;
 }
 .nav-link a:hover {
   background:#222;
   color:#fff;
+}
+.footer-link {
+  margin:10px 0px;
+}
+.footer-link a {
+  display: inline-block;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  transition: all 400ms ease-in-out;
+}
+.footer-link a:hover {
+  background:#fff;
+  color:#222;
 }
 .nav-link:last-child {
   margin-right: 90px;
@@ -350,13 +369,18 @@ textarea {
   bottom: -150px;
 }
 .btn a{
-  display: block;
+  display: inline-block;
   padding: 20px 25px;
   cursor: pointer;
   font-size: 1.25rem;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
+  color: #222;
+}
+.btn-green a{
+  background-color: #51C164;
+  color: #fff;
 }
 .home-footer {
   align-self: flex-end;
@@ -367,9 +391,9 @@ textarea {
   justify-content: center;
 }
 .btn-plant a{
-  padding-bottom: 10px;
+  padding: 40px 50px;
   background: url() left center #fff no-repeat;
-  color: #51C164;
+  display: block;
   transition: all 400ms ease-in-out;
 }
 .btn-plant a:hover {
@@ -408,7 +432,7 @@ article {
 
 .article-body nav a {
   display: inline-block;
-  color: #fff;
+  color: #222;
   text-decoration: none;
   transition: all 300ms ease-in-out;
 }
@@ -483,14 +507,146 @@ article {
 /* === Adjustments === */
 
 /* Scroll all the way up even if the first section starts a couple hundred pixels down the page */
-.article-body section:first-of-type {
-  margin-top: -300px;
-  padding-top: 350px;
-}
 
 .article-body article,
 .article-body section:last-of-type,
 .article-body section:last-of-type p:last-of-type {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+.hobby-grid-left {
+  display:grid;
+  grid-template-columns: 40% 50%;
+  grid-gap: 10%;
+  max-width: 1088px;
+  margin:0 auto;
+  margin-top: 200px;
+  align-items: center;
+}
+.hobby-grid-right {
+  display:grid;
+  grid-template-columns: 50% 40%;
+  grid-gap: 10%;
+  max-width: 1088px;
+  margin:0 auto;
+  margin-top: 200px;
+  align-items: center;
+}
+.hobby-grid-left .image-container img, .hobby-grid-right .image-container img {
+  width: 100%;
+}
+footer {
+  padding: 100px 150px;
+  background-color: #222;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10rem;
+}
+
+.scroll-down {
+  border: 2px solid #222;
+  border-radius: 20px;
+  height: 50px;
+  left: 0;
+  margin: 0 auto;
+  position: relative;
+  right: 0;
+  width: 30px;
+  transition: border 400ms ease;
+}
+.scroll-down::before {
+  animation: scrollDownAnimation 2s infinite;
+  background-color: #222;
+  border-radius: 100%;
+  content: '';
+  height: 6px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 6px;
+  transition: background-color 400ms ease;
+}
+.btn-plant:hover .scroll-down {
+  border: 2px solid #fff;
+}
+.btn-plant:hover .scroll-down::before {
+  background-color: #fff;
+}
+@-moz-keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .home-high h1 {
+    font-size: 2rem;
+  }
+  footer {
+    display: block;
+    padding: 20px 25px;
+  }
 }
