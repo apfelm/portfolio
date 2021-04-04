@@ -276,7 +276,12 @@ textarea {
 .text-right {
   text-align: right;
 }
-
+.mt200 {
+  margin-top: 200px !important;
+}
+.mt100 {
+  margin-top: 100px !important;
+}
 /* SPECIFIC STYLES */
 
 .article-body {
@@ -526,7 +531,6 @@ article {
   grid-gap: 10%;
   max-width: 1088px;
   margin:0 auto;
-  margin-top: 200px;
   align-items: center;
 }
 .hobby-grid-right {
@@ -535,7 +539,6 @@ article {
   grid-gap: 10%;
   max-width: 1088px;
   margin:0 auto;
-  margin-top: 200px;
   align-items: center;
 }
 .hobby-grid-left .image-container img, .hobby-grid-right .image-container img {

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://michaelapfelthaler.at/</loc>
+  <lastmod>2021-04-02T11:10:00+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://michaelapfelthaler.at/index</loc>
+  <lastmod>2021-04-02T11:10:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://michaelapfelthaler.at/webdev</loc>
+  <lastmod>2021-03-28T15:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://michaelapfelthaler.at/design</loc>
+  <lastmod>2021-03-28T15:20:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://michaelapfelthaler.at/fitness</loc>
+  <lastmod>2021-03-28T15:20:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://michaelapfelthaler.at/about</loc>
+  <lastmod>2021-03-28T15:24:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://michaelapfelthaler.at/webdev.html</loc>
+  <lastmod>2021-03-28T15:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://michaelapfelthaler.at/design.html</loc>
+  <lastmod>2021-03-28T15:20:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://michaelapfelthaler.at/fitness.html</loc>
+  <lastmod>2021-03-28T15:20:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://michaelapfelthaler.at/about.html</loc>
+  <lastmod>2021-03-28T15:24:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://michaelapfelthaler.at/contact.html</loc>
+  <lastmod>2021-03-28T15:20:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://michaelapfelthaler.at/gtc.html</loc>
+  <lastmod>2021-03-28T15:20:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://michaelapfelthaler.at/dataprot.html</loc>
+  <lastmod>2021-03-28T15:20:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://michaelapfelthaler.at/legal-notice.html</loc>
+  <lastmod>2021-03-28T15:20:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
