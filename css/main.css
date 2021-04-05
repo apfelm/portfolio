@@ -282,6 +282,12 @@ textarea {
 .mt100 {
   margin-top: 100px !important;
 }
+.mb100 {
+  margin-bottom: 100px !important;
+}
+.mb200 {
+  margin-bottom: 200px !important;
+}
 /* SPECIFIC STYLES */
 
 .article-body {
@@ -545,12 +551,16 @@ article {
   width: 100%;
 }
 footer {
-  padding: 100px 150px;
   background-color: #222;
+  padding: 100px 0;
+}
+footer .footer-grid {
   color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10rem;
+  max-width: 1088px;
+  margin: auto;
 }
 
 .scroll-down {
@@ -644,6 +654,12 @@ footer {
   border: 2px solid #fff;
   margin-top: 20px;
 }
+.mobile-nav {
+  display: none;
+  padding: 20px 40px;
+  font-weight: bold;
+  cursor:default;
+}
 @-moz-keyframes scrollDownAnimation {
   0% {
     opacity: 0;
@@ -709,7 +725,71 @@ footer {
   }
 }
 
-
+@media only screen and (max-width: 1088px) {
+  .page {
+    padding: 0 20px;
+    width: calc(100% - 40px);
+  }
+  .mobile-nav {
+    display: block;
+    position: absolute;
+    right:80px;
+    top:-20px;
+  }
+  .nav:hover .mobile-nav>div{
+    position: relative;
+  }
+  .nav .mobile-nav{
+    text-align: right;
+  }
+  .nav .mobile-nav a{
+    position: static;
+    display: none;
+    white-space: nowrap;
+    padding: 20px 0;
+  }
+  .nav:hover .mobile-nav a{
+    display: block;
+  }
+  .nav:hover .mobile-nav .nav-link:nth-child(1) a{
+    top:20px;
+  }
+  .nav:hover .mobile-nav .nav-link:nth-child(2) a{
+    top:40px;
+  }
+  .nav:hover .mobile-nav .nav-link:nth-child(3) a{
+    top:60px;
+  }
+  .nav:hover .mobile-nav .nav-link:nth-child(4) a{
+    top:80px;
+  }
+  .nav-links {
+    position: relative;
+  }
+  .nav-link {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .hobby-grid-left, .hobby-grid-right, .grid, footer .footer-grid  {
+    display: block;
+  }
+  footer {
+    text-align: center;
+  }
+  .hobby-grid-left img, .hobby-grid-right img{
+    max-width: 300px;
+  }
+  .hobby-grid-left .image-container, .hobby-grid-right .image-container, .grid  .image-container{
+    text-align: center;
+  }
+  .nav-logo {
+    margin-left: 0;
+  }
+  .mobile-nav {
+    right:0px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .home-high h1 {
     font-size: 2rem;
@@ -717,5 +797,8 @@ footer {
   footer {
     display: block;
     padding: 20px 25px;
+  }
+  .grid {
+    max-width: 100%;
   }
 }
