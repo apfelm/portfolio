@@ -12,14 +12,14 @@
    ========================================================================== */
 
 html {
-  color: #222;
+  color: #000727;
   font-size: 1em;
   line-height: 1.4;
   scroll-behavior: smooth;
   font-family: 'Montserrat';
 }
 a {
-  color: #222;
+  color: #000727;
 }
 /*
  * Remove text-shadow in selection highlight:
@@ -268,7 +268,7 @@ textarea {
 /* UTILITY STYLES */
 
 .bg-black {
-  background-color: #222;
+  background-color: #000727;
 }
 .c-w{
   color: #fff;
@@ -287,6 +287,10 @@ textarea {
 }
 .mb200 {
   margin-bottom: 200px !important;
+}
+.fs-32 {
+  font-size: 32pt;
+  font-size: 2.6667rem;
 }
 /* SPECIFIC STYLES */
 
@@ -324,6 +328,7 @@ textarea {
 }
 .nav-links {
   display: flex;
+  margin-right: 90px;
 }
 .nav-link {
   margin: 0 10px;
@@ -331,17 +336,30 @@ textarea {
 .nav-link a {
   letter-spacing: 1px;
   text-decoration: none;
-  color: #222;
+  color: #000727;
   padding: 10px 15px;
   transition: all 400ms ease-in-out;
 }
-.nav-link.active a{
-  background:#222;
-  color:#fff;
+.nav-link a.nav-emph {
+  border: 1px solid #1836C4;
+  border-radius: 6px;
+  padding: 20px 25px;
+  color: #1836C4;
+  margin-left: 20px;
 }
-.nav-link a:hover {
-  background:#222;
-  color:#fff;
+.nav-link a.nav-emph:hover {
+  background-color: #1836C4;
+  color: #fff;
+}
+.nav-link.active span{
+  color: #1836C4;
+}
+.nav-link a span {
+  border-bottom: 2px solid transparent;
+  transition: border .4s ease;
+}
+.nav-link a:hover span {
+  color: #1836C4;
 }
 .footer-link {
   margin:10px 0px;
@@ -356,7 +374,7 @@ textarea {
 }
 .footer-link a:hover {
   background:#fff;
-  color:#222;
+  color:#000727;
 }
 .nav-link:last-child {
   margin-right: 90px;
@@ -376,7 +394,6 @@ textarea {
 }
 .home-high div {
   position: relative;
-  overflow: hidden;
 }
 .home-high div span {
   transition: all 500ms ease;
@@ -387,17 +404,41 @@ textarea {
 }
 .btn a{
   display: inline-block;
-  padding: 20px 25px;
+  padding: 20px 35px;
   cursor: pointer;
-  font-size: 1.25rem;
   text-decoration: none;
-  text-transform: uppercase;
   font-weight: 600;
-  color: #222;
+  color: #000727;
+  border-radius: 6px;
+  transition: all .4s ease;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .btn-green a{
-  background-color: #296130;
+  background-color: #1836C4;
   color: #fff;
+}
+.btn-green:hover a{
+  background-color: #2744D4;
+  color: #fff;
+}
+.btn-emphasized a{
+  padding: 20px 80px;
+  border-width: 4px;
+  border-radius: 12px;
+  background-color: #1836C4;
+  display: inline-block;
+  box-shadow: -5px 30px 20px -20px #9198b7;
+  border: 4px solid hsla(0,0%,100%,.8);
+  color: #fff;
+  text-decoration: none;
+  margin-top: 30px;
+  font-weight: bold;
+  transition: all .4s ease;
+}
+.btn-emphasized a:hover {
+  transform: translateY(-2px);
+  background-color: #2744D4;
+  box-shadow: -5px 33px 21px -20px #9198b7;
 }
 .home-footer {
   align-self: flex-end;
@@ -408,14 +449,21 @@ textarea {
   justify-content: center;
 }
 .btn-plant a{
+  display: inline-block;
+  padding: 20px 35px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(0, 7, 39);
+  border-radius: 6px;
+  transition: all 0.4s ease 0s;
   padding: 40px 50px;
   background: url() left center #fff no-repeat;
   display: block;
   transition: all 400ms ease-in-out;
 }
 .btn-plant a:hover {
-  background: url() left center #296130 no-repeat;
-  color: #fff;
+  color: #1836C4;
 }
 .btn svg {
   display: block;
@@ -449,7 +497,7 @@ article {
 
 .article-body nav a {
   display: inline-block;
-  color: #222;
+  color: #000727;
   text-decoration: none;
   transition: all 300ms ease-in-out;
 }
@@ -550,8 +598,16 @@ article {
 .hobby-grid-left .image-container img, .hobby-grid-right .image-container img {
   width: 100%;
 }
+.hobby-grid-right h2, .hobby-grid-left h2 {
+  margin: 0;
+  line-height: 44px;
+}
+.hobby-grid-right p, .hobby-grid-left p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 footer {
-  background-color: #222;
+  background-color: #000727;
   padding: 100px 0;
 }
 footer .footer-grid {
@@ -564,7 +620,7 @@ footer .footer-grid {
 }
 
 .scroll-down {
-  border: 2px solid #222;
+  border: 2px solid #000727;
   border-radius: 20px;
   height: 50px;
   left: 0;
@@ -576,7 +632,7 @@ footer .footer-grid {
 }
 .scroll-down::before {
   animation: scrollDownAnimation 2s infinite;
-  background-color: #222;
+  background-color: #000727;
   border-radius: 100%;
   content: '';
   height: 6px;
@@ -589,10 +645,10 @@ footer .footer-grid {
   transition: background-color 400ms ease;
 }
 .btn-plant:hover .scroll-down {
-  border: 2px solid #fff;
+  border: 2px solid #1836C4;
 }
 .btn-plant:hover .scroll-down::before {
-  background-color: #fff;
+  background-color: #1836C4;
 }
 .grid {
   display: grid;
